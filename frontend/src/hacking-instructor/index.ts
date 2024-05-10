@@ -101,7 +101,7 @@ function loadHint (hint: ChallengeHint): HTMLElement {
   picture.style.height = '64px'
   picture.style.marginRight = '8px'
   picture.src = '/assets/public/images/hackingInstructor.png'
-//fix for insecure-document-method semgrep rule code finding
+  //fix for insecure-document-method semgrep rule code finding
   function sanitizeHTML(input) {
       return input.replace(/</g, '&lt;').replace(/>/g, '&gt;');
   }
