@@ -103,11 +103,11 @@ function loadHint (hint: ChallengeHint): HTMLElement {
   picture.src = '/assets/public/images/hackingInstructor.png'
 
   function sanitizeHTML(input) {
-   
-    return input.replace(/</g, '&lt;').replace(/>/g, '&gt;');
-}
-  const textBox = document.createElement('span')
-  textBox.style.flexGrow = '2'
+      return input.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  const textBox = document.createElement('span');
+  textBox.style.flexGrow = '2';
   const sanitizedText = sanitizeHTML(snarkdown(hint.text)); 
   textBox.textContent = sanitizedText;
 
